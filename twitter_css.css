@@ -1,0 +1,11 @@
+.well {
+    background: rgb(255, 255, 255);
+}
+
+.button-retweet:hover {
+         color: #19cf86; 
+}
+
+.button-heart:hover {
+         color: rgb(232, 28, 79);
+}
