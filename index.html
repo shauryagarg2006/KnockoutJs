@@ -44,13 +44,13 @@
 					</button>
 				</div>
 				<div class="col-md-1 col-lg-1 col-sm-2">
-					<button type="button" class="btn btn-link button-def-glyph button-retweet">
+					<button type="button" class="btn btn-link button-def-glyph button-retweet" data-bind="click: $root.retweetFunc">
 						<span class="glyphicon glyphicon-repeat"></span> <span data-bind="text: tweet_count"> 30</span>
 					</button>
 				</div>
 				
 				<div class="col-md-1 col-lg-1 col-sm-2">
-					<button type="button" class="btn btn-link button-def-glyph button-heart">
+					<button type="button" class="btn btn-link button-def-glyph button-heart" data-bind="click: $root.likeFunc">
 						<span class="glyphicon glyphicon-heart"></span> <span data-bind="text: tweet_like"> 20</span>
 					</button>
 				</div>

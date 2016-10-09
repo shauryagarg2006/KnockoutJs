@@ -14,9 +14,15 @@ function TwitterViewModel() {
         new TweetModel("@Verge","images/verge.jpg","Happy two years of verge!","",5,21),
         new TweetModel("@NCState","images/NcState.jpg","Will Be Celebrating Golden Gubliee Soon :D","",500,221)
         ]);
-
-
     
+    this.retweetFunc= function(sel_tweet){
+        //alert("hi");
+        sel_tweet.tweet_count(sel_tweet.tweet_count()+1);
+    };
+     this.likeFunc= function(sel_tweet){
+        //alert("hi");
+        sel_tweet.tweet_like(sel_tweet.tweet_like()+1);
+    };
 };
 
 
