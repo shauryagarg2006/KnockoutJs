@@ -39,7 +39,7 @@
 			<div class="row">
 				<div class="col-md-1 col-lg-1 col-sm-1"></div>
 				<div class="col-md-1 col-lg-1 col-sm-2">
-					<button type="button" class="btn btn-link button-def-glyph">
+					<button type="button" class="btn btn-link button-def-glyph" data-bind="click: $root.addFunc">
 						<span class="glyphicon glyphicon-share-alt"></span>
 					</button>
 				</div>
@@ -55,9 +55,13 @@
 					</button>
 				</div>
 				<div class="col-md-1 col-lg-1 col-sm-2">
-					<button type="button" class="btn btn-link button-def-glyph">
+					<button type="button" class="btn btn-link button-def-glyph" data-toggle="dropdown">
 						<span class="glyphicon glyphicon-option-horizontal"></span>
+
 					</button>
+					<ul class = "dropdown-menu" role = "menu">
+						<li><a href = "#" data-bind="click: $root.removeFunc">Remove</a></li>
+					</ul>
 				</div>
 				<div class="col-md-7 col-lg-7 col-sm-2"></div>
 			</div>
