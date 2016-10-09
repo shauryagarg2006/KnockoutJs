@@ -9,4 +9,4 @@ All the buttons are functional. Using them one can increase the like, retweet co
 
 #####Using Selenium
 
-The code containg the test cases is present in the file WebTest.java in the master branch! 
+The code containg the test cases is present in the file **WebTest.java** in the master branch! 
