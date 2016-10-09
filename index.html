@@ -10,53 +10,52 @@
 
 </head>
 <body>
-	<span data-bind="text: sampleText"></span>
-	<!-- Latest compiled and minified JavaScript -->
 	
-	<div class="container">
+	
+	<div class="container" data-bind="foreach: tweets">
 		<div class="well">
 			
 			<div class="row">
 				<div class="col-md-2 col-lg-1 col-sm-2">
-					<img src='images/elon.jpg' class="img-responsive img-rounded"></img>
+					<img class="img-responsive img-rounded" data-bind="attr: {src: user_img}"></img>
 				</div>
 				<div class="col-md-10 col-lg-11 col-sm-10">
 					<div class='row'>
-						<div class="col-md-12 col-lg-12 col-sm-12">
+						<div class="col-md-12 col-lg-12 col-sm-12" data-bind="text: user_name">
 							@ElonMusk
 						</div>
-						<div class="col-md-12 col-lg-12 col-sm-12">
-							Feeling proud after landing SpaceX successfully.
+						<div class="col-md-12 col-lg-12 col-sm-12" data-bind="text: tweet_txt">
+							
 						</div>
 					</div>
 				</div>
 			</div>
 			<div class="row">
 				<div class="col-md-2 col-lg-1 col-sm-2"></div>
-				<div class="col-md-10 col-lg-11 col-sm-10">
-					<img src='images/spacex.jpg'class="img-responsive img-rounded" width="304" height="236"></img>
+				<div class="col-md-10 col-lg-11 col-sm-10" data-bind="visible: tweet_img.length > 0">
+					<img data-bind="attr: {src: tweet_img}"class="img-responsive img-rounded" width="304" height="236"></img>
 				</div>
 			</div>
 			<div class="row">
 				<div class="col-md-1 col-lg-1 col-sm-1"></div>
 				<div class="col-md-1 col-lg-1 col-sm-2">
-					<button type="button" class="btn btn-link">
+					<button type="button" class="btn btn-link button-def-glyph">
 						<span class="glyphicon glyphicon-share-alt"></span>
 					</button>
 				</div>
 				<div class="col-md-1 col-lg-1 col-sm-2">
-					<button type="button" class="btn btn-link button-retweet">
-						<span class="glyphicon glyphicon-repeat"> 30</span>
+					<button type="button" class="btn btn-link button-def-glyph button-retweet">
+						<span class="glyphicon glyphicon-repeat"></span> <span data-bind="text: tweet_count"> 30</span>
 					</button>
 				</div>
 				
 				<div class="col-md-1 col-lg-1 col-sm-2">
-					<button type="button" class="btn btn-link">
-						<span class="glyphicon glyphicon-heart button-heart"> 20</span>
+					<button type="button" class="btn btn-link button-def-glyph button-heart">
+						<span class="glyphicon glyphicon-heart"></span> <span data-bind="text: tweet_like"> 20</span>
 					</button>
 				</div>
 				<div class="col-md-1 col-lg-1 col-sm-2">
-					<button type="button" class="btn btn-link">
+					<button type="button" class="btn btn-link button-def-glyph">
 						<span class="glyphicon glyphicon-option-horizontal"></span>
 					</button>
 				</div>

@@ -4,8 +4,16 @@
 
 .button-retweet:hover {
          color: #19cf86; 
+         text-decoration: none;
+}
+
+
+
+.button-def-glyph{
+	color: rgb(170, 184, 194);
 }
 
 .button-heart:hover {
          color: rgb(232, 28, 79);
+         text-decoration: none;
 }
