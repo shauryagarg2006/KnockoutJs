@@ -1,6 +1,3 @@
-# HW3
-####Shaurya Garg
-####Unity-Id: sgarg7
 ____
 #####Creating a few sample twitter tweets using knockout and bootstrap!
 
